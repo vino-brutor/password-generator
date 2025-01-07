@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function PasswordGenerator(){
+export default function PasswordGenerator(setCopy){
     const [password, setPassword] = useState("")
 
     function createPassword(){
@@ -10,6 +10,7 @@ export default function PasswordGenerator(){
             generatedPassword += characters[Math.floor(Math.random() * characters.length)]
         }
         setPassword(generatedPassword)
+        setCopy("Copiar")
     }
 
     return {password, createPassword}

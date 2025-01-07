@@ -15,7 +15,7 @@ function App() {
     <>
       <div className="card">
         <h1>Gerador de senahs</h1>
-        <button onClick={() => createPassword()}>
+        <button onClick={() => createPassword(setCopy)}>
           Gerar senha
         </button>
         <h2>
